@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon src/index"
+    "server": "nodemon src/index",
+    "start": "node src/index"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,7 @@
     "@handlebars/allow-prototype-access": "^1.0.5",
     "bcryptjs": "^2.4.3",
     "connect-flash": "^0.1.1",
+    "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "express-handlebars": "^6.0.1",
@@ -22,5 +24,6 @@
     "mongoose": "^6.0.12",
     "passport": "^0.5.0",
     "passport-local": "^1.0.0"
-  }
+  },
+  "devDependencies": {}
 }
