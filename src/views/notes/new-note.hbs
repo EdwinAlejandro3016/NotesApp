@@ -1,0 +1,23 @@
+{{#each errors}}
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+  {{text}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+{{/each}}
+
+
+    <div class="col-md-4 mx-auto">
+    <div class="card">
+        <div class="card-header">
+            <h2>new note</h2>
+        </div>
+        <div class="card-body">
+            <form action="/notes/new-note" method="POST">
+                    <input value="{{ title }}" type="text" name="title" class="form-control mb-4" placeholder="Title" autofocus>
+                    <textarea name="description" class="form-control mb-4" placeholder="description">{{ description}}</textarea>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Save</button>
+            </form>
+        </div>
+    </div>
+</div>
